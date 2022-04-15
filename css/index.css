@@ -1,0 +1,623 @@
+/* Google font arabic */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/* Varibles - المتغيرات*/
+:root
+{
+    --main-color: #778beb;
+    --hover-color: hsl(220,80.1%,59.8%);
+    --body-color: #2f3542;
+    --container-color: #57606f;
+    --text-color: #fcfeff;
+}
+
+html::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: var(--main-color);
+    border-radius: 2.5rem;
+}
+
+::selection
+{
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+section
+{
+    padding: 3rem 0 2rem;
+}
+
+img
+{
+    width: 100%;
+}
+
+.bx
+{
+    cursor: pointer;
+}
+
+body
+{
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+.container
+{
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo
+{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 0 0 auto;
+}
+
+.logo span
+{
+    color: var(--main-color);
+}
+
+.search_box
+{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-left: 1rem;
+}
+
+.search_box .bx
+{
+    font-size: 1.1rem;
+}
+
+.search_box .bx:hover
+{
+    color: var(--main-color);
+}
+
+#search_input
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.983rem;
+}
+::placeholder
+{
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.user
+{
+    display: flex;
+}
+
+.user_img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar
+{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+}
+
+.nav_link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b7b7b7;
+}
+
+.nav_link:hover, .nav_active
+{
+    color: var(--text-color);
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+.nav_link .bx
+{
+    font-size: 1.6rem;
+}
+
+.nav_link_title
+{
+    font-size: 0.7rem;
+}
+
+.home
+{
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem !important;
+    border-radius: 1rem;
+}
+
+.home_img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.home_text
+{
+    padding-right: 40px;
+}
+
+.home_title
+{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home_text p
+{
+    font-size: 0.938rem;
+    margin: 10px 0 20px;
+    background: var(--main-color);
+}
+
+.watch_btn
+{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    color: var(--text-color);
+}
+
+.watch_btn .bx
+{
+    font-size: 21px;
+    background: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch_btn .bx:hover
+{
+    background: var(--hover-color);
+}
+
+.watch_btn span
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.heading
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--container-color);
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.heading_title
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quran_box
+{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.quran_box_img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.quran_box .box_text
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: linear-gradient(8deg, hsl(240 17% 14% / 74%) 14%, hsl(240 17% 14% / 14%) 44%);
+    overflow: hidden;
+}
+
+.quran_title
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.surah
+{
+    font-size: 0.938rem;
+}
+
+.play_btn
+{
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.8rem;
+}
+
+.swiper_btn
+{
+    display: flex;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev
+{
+    position: static !important;
+    margin: 0 0 0 10px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after
+{
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+.quran .heading
+{
+    padding: 10px 14px;
+}
+
+.quran_content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    gap: 1.5rem;
+    transition: 0.5s ease;
+}
+
+.quran_content .quran_box:hover .quran_box_img
+{
+    transform: scale(1.1);
+}
+
+.next_page
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.next_btn
+{
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.next_btn:hover
+{
+    background: var(--hover-color);
+}
+
+.copyright
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.play_container
+{
+    position: relative;
+    min-height: 540px;
+    margin-top: 5rem !important;
+}
+
+.play_img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.play_text
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    background: linear-gradient(8deg, hsl(240 17% 14% / 74%) 14%, hsl(240 17% 14% / 14%) 44%);
+}
+
+.play_text h2
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.rating
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    column-gap: 2px;
+    color: gold;
+    margin-top: 4px;
+}
+
+.tags
+{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin: 1rem 0;
+}
+
+.tags span
+{
+    background: var(--container-color);
+    padding: 0 4px;
+}
+
+.play_quran
+{
+    position: absolute;
+    bottom: 18rem;
+    left: 10rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--main-color);
+    font-size: 24px;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        box-shadow: 0 0 0 0 rgb(55,66,250, 0.7);
+    }
+
+    40%
+    {
+        box-shadow: 0 0 0 50px rgb(55,55,7, 0);
+    }
+
+    80%
+    {
+        box-shadow: 0 0 0 50px rgb(55,55,7, 0);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0 rgb(55,55,7, 0);
+    }
+}
+
+.video_container
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(234 10% 20% / 60%);
+    z-index: 400;
+}
+
+.video_container.show_video
+{
+    display: flex;
+}
+
+.video_box
+{
+    position: relative;
+    width: 68%;
+}
+
+.video_box #myVideo
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.close_video
+{
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.about_quran
+{
+    margin-top: 2rem !important;
+}
+
+.about_quran h2
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.about_quran p
+{
+    max-width: 600px;
+    font-size: 0.938rem;
+    margin: 10px 0;
+}
+
+.reader_heading
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.reader
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    gap: 1rem;
+}
+
+.reader_img
+{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.download
+{
+    max-width: 800px;
+    width: 1005;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.download_title
+{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.6rem 0;
+    color: var(--main-color);
+}
+
+.download_links
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.download_links a
+{
+    text-align: center;
+    background: var(--main-color);
+    padding: 12px 24px;
+    color: var(--text-color);
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.download_links a:hover
+{
+    background: var(--hover-color);
+}
